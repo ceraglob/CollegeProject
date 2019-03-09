@@ -1,7 +1,10 @@
-$('.owl-carousel').owlCarousel({
+$('.HomePage').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
+    autoplay:false,
+autoplayTimeout:1000,
+autoplayHoverPause:false,
     responsive:{
         0:{
             items:1
@@ -13,4 +16,25 @@ $('.owl-carousel').owlCarousel({
             items:5
         }
     }
-})
+});
+
+$('.productlist').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay:false,
+autoplayTimeout:1000,
+autoplayHoverPause:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+});
+

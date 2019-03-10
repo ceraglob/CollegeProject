@@ -811,6 +811,9 @@ img {
     text-align: center;
     transition: all 0.3s ease-in-out;
 }
+.team:hover .thumb a img {
+    transform: scale(1.2) rotate(5deg);
+}
 .team .team-info .content {
     padding: 20px 18px;
 }
@@ -843,6 +846,80 @@ img {
 }
 .social-net-2 li {
     margin: 0 10px;
+}
+.team:hover .team-info {
+    background: #6195ff;
+}
+.team:hover .team-info h4 a {
+    color: #ffffff;
+}
+.team:hover .team-info .content span {
+   color:#ffffff;
+}
+.social-net-2 li a {
+    color: #18012c;
+    font-size: 14px;
+    display: block;
+    background: transparent;
+}
+.facebook {
+    background-color: #3B5997;
+    color: #ffffff;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.testimonial-grid-2 {
+    padding: 15px 10px;
+}
+.testimonial-grid-3 {
+    padding: 40px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+ .testimonal img {
+    float: left;
+    max-width: 90px;
+    border-radius: 50%;
+    border: 1px solid #6195ff;
+    box-sizing: content-box;
+}
+ .testimonal .content {
+    overflow: hidden;
+    padding-left: 20px;
+}
+ .testimonal .content p {
+    color: #3e3e3e;
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 28px;
+}
+ .testimonal .content .clint-info {
+    padding-left: 50px;
+    position: relative;
+}
+ .testimonal .content .clint-info::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: #383838;
+    left: 0;
+    top: 4px;
+}
+.testimonal .content .clint-info h4 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #383838;
+    margin-bottom: 2px;
+}
+ .testimonal .content .clint-info span {
+    color: #383838;
+    font-size: 14px;
 }
 /*CompanyProfile Css End*/
 /*// Extra small devices (portrait phones, less than 576px)*/

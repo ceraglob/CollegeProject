@@ -253,6 +253,7 @@ header .row{
 #home-company{
 	height: 60vh;
 }
+/*CompanyProfile Css Start*/
 .title-wrapper{
 	float: left;
     margin-bottom: 60px;
@@ -638,6 +639,136 @@ textarea {
 button, input[type="submit"] {
     cursor: pointer;
 }
+.bg-overlay {
+    position: relative;
+}
+.bg_image {
+    background: url(../images/newsshelter.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.bg-overlay::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    content: "";
+    height: 100%;
+    width: 100%;
+}
+.newsletter-style-2 .title h4 {
+    color: #ffffff;
+    font-weight: 500;
+}
+h4 {
+    font-size: 24px;
+    line-height: 30px;
+}
+.newsletter-style-2 .title h2 {
+    color: #ffffff;
+    font-weight: 500;
+    margin: 0;
+    font-weight: 600;
+}
+h2 {
+    font-size: 36px;
+    line-height: 42px;
+}
+.newsletter-style-2 .input-box {
+    position: relative;
+}
+.newsletter-style-2 .input-box input {
+    background-color: transparent;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    line-height: 24px;
+    padding: 12px 30px;
+    font-size: 14px;
+    color: #d8d8d8;
+    width: calc(100% - 190px);
+    font-style: italic;
+}
+.newsletter-style-2.political-newsletter .input-box button {
+    background-color: #6195FF;
+}
+.newsletter-style-2 .input-box button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 170px;
+    height: 50px;
+    background-color: #0056ff;
+    border: none;
+    border-radius: 5px;
+    padding: 13px 20px;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    transition: 0.4s;
+    font-weight: 600;
+}
+.team {
+    overflow: hidden;
+}
+.team .thumb {
+    position: relative;
+    overflow: hidden;
+}
+.team .thumb a {
+    display: block;
+}
+.team .thumb a img {
+    transition: 0.5s;
+}
+.team .thumb a img {
+    width: 100%;
+}
+img {
+    max-width: 100%;
+}
+.team .team-info {
+    background: #fff;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+.team .team-info .content {
+    padding: 20px 18px;
+}
+.team .team-info .content h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+.team .team-info .content h4 a {
+    color: #343434;
+}
+.team .team-info .content span {
+    color: #343434;
+    font-size: 14px;
+    font-weight: 400;
+}
+.team .team-info .social-network {
+    padding: 14px 0;
+    border-top: 2px solid #f4f4f4;
+}
+.team ul.social-network {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.social-net-2 {
+    margin-bottom: 8px;
+}
+.social-net-2 li {
+    margin: 0 10px;
+}
+/*CompanyProfile Css End*/
 /*// Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) 
 {
@@ -669,6 +800,12 @@ button, input[type="submit"] {
 }
 .section-ptb {
     padding: 80px 0;
+}
+.section-pb-90 {
+    padding-bottom: 60px;
+}
+.section-pt {
+    padding-top: 80px;
 }
 }
 

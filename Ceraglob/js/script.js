@@ -40,7 +40,7 @@ autoplayHoverPause:false,
 $('.clientsay').owlCarousel({
     loop:true,
     margin:10,
-    nav:false,
+    nav:true,
     autoplay:false,
 autoplayTimeout:1000,
 autoplayHoverPause:false,

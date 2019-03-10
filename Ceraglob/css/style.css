@@ -665,6 +665,12 @@ header .row{
 	color: #3d3d3d;
 	font-size: 30px;
 }
+.contact-btn:hover{
+	color: white;
+}
+.contact-btn:focus{
+	color: white;
+}
 .repair-service-form form input {
 	margin-top: 30px;
 	height: 50px;

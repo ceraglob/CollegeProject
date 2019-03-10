@@ -8,6 +8,7 @@ body {
 	font-style: normal;
 	font-weight: normal;
 	visibility: visible;
+	transition: 1.5;
 	font-family: "Poppins", sans-serif;
 	color: #454545;
 	position: relative;
@@ -21,7 +22,7 @@ a{
 	color: #ffffff;
 }
 a, button, img, input, span {
-    transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
 }
 a:hover,a:focus{
 	text-decoration: none;
@@ -42,6 +43,9 @@ img{
 }
 header{
 	position: relative;
+}
+.text-blue{
+	color:#6195FF;
 }
 .bg-img{
 	background-image: url('../images/contactUs.jpg');
@@ -146,6 +150,77 @@ header .row{
 .blue-btn:hover{
 	background: #6195F0;
 }
+.owl-carousel .owl-nav button.owl-prev {
+	top: 40%;
+	left: -8px;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background: url(../images/left-arrow-round.svg)no-repeat;
+	background-size: 50px;
+	color: inherit;
+	border: none;
+	padding: 0 !important;
+	font: inherit;
+}
+.owl-carousel .owl-nav button.owl-next{
+	position: absolute;
+	top:40%;
+	right: -7px;
+	width: 50px;
+	height: 50px;
+	background: url(../images/right-arrow-round.svg)no-repeat;
+	background-size: 50px;
+	color: inherit;
+	border: none;
+	padding: 0 !important;
+	font: inherit;
+}
+.owl-carousel .owl-nav button.owl-next span{
+	visibility: hidden;
+}
+.owl-carousel .owl-nav button.owl-prev span{
+	visibility: hidden;
+}
+.container-carousel{
+	position: relative;
+	width: 100%;
+}
+
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.overlay-img {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #6195ff;
+}
+
+.container-carousel:hover .overlay-img {
+	opacity: 1;
+}
+
+.img-text {
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+	padding: 10px;
+	margin-top: 15%;
+}
+/*.tilesbanner-img{
+	background-image: url(../images/tilesbanner.png); 
+}*/
 /*END HOME CONTENT */
 
 /*ABOUT*/
@@ -435,240 +510,209 @@ header .row{
 .imgsize-product{
 	height: 300px;
 }
-.owl-carousel .owl-nav button.owl-prev {
-    top: 40%;
-    left: -15px;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background: url(../images/left-arrow-round.svg)no-repeat;
-    background-size: 50px;
-    color: inherit;
-    border: none;
-    padding: 0 !important;
-    font: inherit;
-}
-.owl-carousel .owl-nav button.owl-next{
-	position: absolute;
-	top:40%;
-	right: -15px;
-    width: 50px;
-    height: 50px;
-    background: url(../images/right-arrow-round.svg)no-repeat;
-    background-size: 50px;
-    color: inherit;
-    border: none;
-    padding: 0 !important;
-    font: inherit;
-}
-.owl-carousel .owl-nav button.owl-next span{
-	visibility: hidden;
-}
-.owl-carousel .owl-nav button.owl-prev span{
-	visibility: hidden;
-}
+
 .service-2 .content h4 {
-    color: #575757;
-    font-size: 22px;
-     line-height: 30px; 
-    margin-bottom: 13px;
-    padding: 0 9px;
+	color: #575757;
+	font-size: 22px;
+	line-height: 30px; 
+	margin-bottom: 13px;
+	padding: 0 9px;
 }
 .service-2 .content h4 a {
-    color: #575757;
+	color: #575757;
 }
 .service-2 .content h4 a:hover {
-    color: #6195FF;
+	color: #6195FF;
 }
 .service-2.cleaning-service .content {
-    padding: 30px 20px;
+	padding: 30px 20px;
 }
 .service-2 .content {
-    padding-top: 30px;
+	padding-top: 30px;
 }
 .service-2.padding-none {
-    padding: 0;
+	padding: 0;
 }
 .service-2 {
-    background: #ffffff;
-    padding: 30px;
-    transition: 0.4s ease-in-out;
+	background: #ffffff;
+	padding: 30px;
+	transition: 0.4s ease-in-out;
 }
 .mb-30 {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 .service-2.cleaning-service .content p {
-    margin-bottom: 8px;
+	margin-bottom: 8px;
 }
 .service-2 .content p {
-    color: #818181;
-    font-size: 14px;
-    line-height: 24px;
-    margin-bottom: 35px;
+	color: #818181;
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 35px;
 }
 .service-2 .content a.readmore_btn.btn-transparent {
-    border: 0 none;
-    width: inherit;
-    height: inherit;
-    color: #3f3f3f;
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
+	border: 0 none;
+	width: inherit;
+	height: inherit;
+	color: #3f3f3f;
+	font-size: 14px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
 }
 .service-2 .content a.readmore_btn {
-    height: 42px;
-    border: 1px solid #0056ff;
-    display: inline-block;
-    padding: 0 42px;
-    line-height: 40px;
-    font-size: 14px;
-    border-radius: 30px;
-    color: #0056ff;
-    font-weight: 600;
-    transition: 0.5s;
+	height: 42px;
+	border: 1px solid #0056ff;
+	display: inline-block;
+	padding: 0 42px;
+	line-height: 40px;
+	font-size: 14px;
+	border-radius: 30px;
+	color: #0056ff;
+	font-weight: 600;
+	transition: 0.5s;
 }
 .service-2 .content a.readmore_btn.btn-transparent:hover {
-    color: #6195FF;
-    background: transparent;
+	color: #6195FF;
+	background: transparent;
 }
 .section-ptb {
-    padding: 120px 0;
+	padding: 120px 0;
 }
 .align-items-center {
-    -ms-flex-align: center!important;
-    -webkit-box-align: center!important;
-    align-items: center!important;
+	-ms-flex-align: center!important;
+	-webkit-box-align: center!important;
+	align-items: center!important;
 }
 .mt-20 {
-    margin-top: 20px;
+	margin-top: 20px;
 }
 .choose-resone-inner p {
-    max-width: 530px;
-    font-size: 16px;
-    margin-bottom: 25px;
+	max-width: 530px;
+	font-size: 16px;
+	margin-bottom: 25px;
 }
 .service-6.reapir-service {
-    margin-top: 12px;
+	margin-top: 12px;
 }
 .service-6 {
-    margin-top: 12px;
+	margin-top: 12px;
 }
 .mt-30 {
-    margin-top: 30px;
+	margin-top: 30px;
 }
 .service-6.reapir-service .icons {
-    border: 0 none;
-    width: auto;
-    height: auto;
-    line-height: inherit;
-    border-radius: inherit;
-    float: left;
-    text-align: center;
-    margin-right: 22px;
-    margin-top: 10px;
+	border: 0 none;
+	width: auto;
+	height: auto;
+	line-height: inherit;
+	border-radius: inherit;
+	float: left;
+	text-align: center;
+	margin-right: 22px;
+	margin-top: 10px;
 }
 .service-6 .icons {
-    border: 1px solid #4e89fb;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-    border-radius: 100%;
-    float: left;
-    text-align: center;
-    margin-right: 22px;
-    margin-top: 10px;
+	border: 1px solid #4e89fb;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	border-radius: 100%;
+	float: left;
+	text-align: center;
+	margin-right: 22px;
+	margin-top: 10px;
 }
 .service-6 .content {
-    overflow: hidden;
+	overflow: hidden;
 }
 .service-6.reapir-service .content h4 {
-    color: #3d3d3d;
+	color: #3d3d3d;
 }
 .service-6 .content h4 {
-    color: #5f5f5f;
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 7px;
+	color: #5f5f5f;
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 7px;
 }
 .service-6.reapir-service .content p {
-    font-size: 16px;
-    line-height: 30px;
-    color: #585757;
-    max-width: 390px;
+	font-size: 16px;
+	line-height: 30px;
+	color: #585757;
+	max-width: 390px;
 }
 .service-6 .content p {
-    font-size: 14px;
-    line-height: 25px;
-    color: #5b5b5b;
+	font-size: 14px;
+	line-height: 25px;
+	color: #5b5b5b;
 }
 .choose-resone-inner p {
-    max-width: 530px;
-    font-size: 16px;
-    margin-bottom: 25px;
+	max-width: 530px;
+	font-size: 16px;
+	margin-bottom: 25px;
 }
 .contact_form_container.repair-request-form {
-    background: #f4f4f4;
+	background: #f4f4f4;
 }
 .contact_form_container {
-    padding: 65px 60px;
+	padding: 65px 60px;
 }
 .contact_form_container.repair-request-form .ct-title-2 {
-    text-align: center;
+	text-align: center;
 }
 .contact_form_container.repair-request-form .ct-title-2 h2 {
-    font-weight: 600;
-    color: #3d3d3d;
-    font-size: 30px;
+	font-weight: 600;
+	color: #3d3d3d;
+	font-size: 30px;
 }
 .repair-service-form form input {
-    margin-top: 30px;
-    height: 50px;
-    line-height: 50px;
-    color: #fff;
-    font-weight: 300;
-    padding: 0 20px;
-    width: 100%;
-    font-family: "Montserrat", sans-serif;
-    border: 1px solid #e1e1e1;
-    background: #ffffff;
-    color: #707070;
+	margin-top: 30px;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	font-weight: 300;
+	padding: 0 20px;
+	width: 100%;
+	font-family: "Montserrat", sans-serif;
+	border: 1px solid #e1e1e1;
+	background: #ffffff;
+	color: #707070;
 }
 .repair-service-form form textarea {
-    margin-top: 30px;
-    min-height: 145px;
-    width: 100%;
-    border: 1px solid #fff;
-    padding: 20px;
-    font-weight: 300;
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
-    border: 1px solid #e1e1e1;
-    color: #707070;
-    background: #ffffff;
+	margin-top: 30px;
+	min-height: 145px;
+	width: 100%;
+	border: 1px solid #fff;
+	padding: 20px;
+	font-weight: 300;
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	border: 1px solid #e1e1e1;
+	color: #707070;
+	background: #ffffff;
 }
 textarea {
-    overflow: auto;
-    resize: vertical;
+	overflow: auto;
+	resize: vertical;
 }
 .repair-service-form form input[type="submit"] {
-    background: #fff;
-    height: 55px;
-    line-height: 56px;
-    border: 0 none;
-    padding: 0 30px;
-    color: #0056ff;
-    font-weight: 600;
-    width: auto;
-    transition: 0.5s;
-    color: #ffffff;
-    width: 100%;
-    background: #6195FF;
-    font-size: 14px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+	background: #fff;
+	height: 55px;
+	line-height: 56px;
+	border: 0 none;
+	padding: 0 30px;
+	color: #0056ff;
+	font-weight: 600;
+	width: auto;
+	transition: 0.5s;
+	color: #ffffff;
+	width: 100%;
+	background: #6195FF;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
 }
 button, input[type="submit"] {
-    cursor: pointer;
+	cursor: pointer;
 }
 /*// Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) 
@@ -699,12 +743,12 @@ button, input[type="submit"] {
 	.section-pb {
 		padding-bottom: 80px;
 	}
-.section-pb {
-    padding-bottom: 80px;
-}
-.section-ptb {
-    padding: 80px 0;
-}
+	.section-pb {
+		padding-bottom: 80px;
+	}
+	.section-ptb {
+		padding: 80px 0;
+	}
 }
 
 /*// Extra large devices (large desktops, 1200px and up)*/

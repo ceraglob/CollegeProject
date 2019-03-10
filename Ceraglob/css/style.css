@@ -1,4 +1,4 @@
-
+	
 body {
 	margin:auto;
 	padding: 0px;
@@ -419,7 +419,28 @@ header .row{
 	transition: all 0.3s ease 0s;
 	margin-top:30px;
 }
-
+.btn-company:hover{
+	background-color: #1d2736;
+    border-color: #1d2736;
+    color: #ffffff;
+}
+.btn-company::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 0;
+    width: 100%;
+    background-color: #1d2736;
+    transition: all 0.3s ease 0s;
+    content: "";
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    opacity: 0;
+    z-index: -1;
+}
+.btn-company:hover::before {
+    height: 300%;
+    opacity: 1;
+}
 .title-2 {
 	margin-bottom: 30px;
 }
@@ -862,6 +883,9 @@ img {
 .team:hover .team-info .content span {
    color:#ffffff;
 }
+.team:hover .team-info .social-net-2 li a {
+   color:#ffffff;
+}
 .social-net-2 li a {
     color: #18012c;
     font-size: 14px;
@@ -927,6 +951,78 @@ img {
     color: #383838;
     font-size: 14px;
 }
+.row-service-wrap {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    background: #EDEDED;
+}
+.service-6.medical-service {
+    background: #f7f7f7;
+    margin-top: 0;
+    padding: 50px 69px;
+}
+
+.service-6.medical-service .icons {
+    border: 1px solid transparent;
+    width: auto;
+    height: auto;
+    line-height: inherit;
+    border-radius: inherit;
+    float: left;
+    text-align: center;
+    margin-right: 25px;
+    margin-top: 10px;
+    max-width: 60px;
+}
+.service-6 .icons {
+    border: 1px solid #4e89fb;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 100%;
+    float: left;
+    text-align: center;
+    margin-right: 22px;
+    margin-top: 10px;
+}
+.service-6.medical-service .content {
+    overflow: hidden;
+}
+.service-6.medical-service .content h4 {
+    font-family: : "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+.service-6 .content h4 {
+    color: #5f5f5f;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.service-6.medical-service .content p {
+    font-size: 14px;
+    line-height: 26px;
+    font-family: : "Montserrat", sans-serif;
+}
+.service-6 .content p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #5b5b5b;
+}
+.service-6.medical-service.service-bg-2 {
+    background: #ededed;
+}
 /*CompanyProfile Css End*/
 /*// Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) 
@@ -977,11 +1073,21 @@ img {
 .section-pt {
     padding-top: 80px;
 }
+.service-6.medical-service {
+    padding: 30px 20px;
+}
+.service-6.medical-service .icons {
+    max-width: 45px;
+    margin-right: 15px;
+}
+
 
 }
 
 /*// Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) 
 {
-
+.service-6.medical-service {
+    padding: 30px 20px;
+}
 }

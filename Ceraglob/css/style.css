@@ -314,7 +314,10 @@ header .row{
 	box-shadow: 0px 5px 20px #cccccc;
 }
 .chooseUs-box{
-	background-color: #f5f5f5;
+	background-color: #f7f7f7;
+}
+.chooseUs-box1{
+	background-color: #ededed;
 }
 .prettydropdown >ul{
 	border-radius: 7px;

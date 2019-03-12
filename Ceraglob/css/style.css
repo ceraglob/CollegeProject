@@ -137,6 +137,13 @@ header .row{
 	color: #ffffff;
 	background: #6195FF;
 }
+.blue-btn:hover{
+	color: #6195FF;
+	background: black;
+	opacity:0.8;
+	border:1px solid #6195FF;
+}
+	
 .white-btn, .blue-btn{
 	margin: 3px;
 	padding: 10px 30px;
@@ -146,9 +153,6 @@ header .row{
 }
 .white-btn:hover{
 	background: #ddd;
-}
-.blue-btn:hover{
-	background: #6195F0;
 }
 .owl-carousel .owl-nav button.owl-prev {
 	top: 40%;
@@ -311,7 +315,7 @@ header .row{
 	color: white;
 }
 .contact-us-form{
-	box-shadow: 0px 5px 20px #cccccc;
+	box-shadow: 0px 10px 20px #cccccc;
 }
 .chooseUs-box{
 	background-color: #f5f5f5;

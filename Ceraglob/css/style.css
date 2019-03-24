@@ -342,6 +342,10 @@ header .row{
 	text-align: center;
 	width: 100%;
 }
+.owl-nav button:focus
+{
+	outline: none !important;
+}
 .title-inner {
 	display: inline-block;
 }

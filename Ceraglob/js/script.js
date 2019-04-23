@@ -3,8 +3,8 @@ $('.HomePage').owlCarousel({
     margin:10,
     nav:true,
     autoplay:false,
-autoplayTimeout:1000,
-autoplayHoverPause:false,
+    autoplayTimeout:1000,
+    autoplayHoverPause:false,
     responsive:{
         0:{
             items:1
@@ -23,8 +23,8 @@ $('.productlist').owlCarousel({
     margin:10,
     nav:true,
     autoplay:false,
-autoplayTimeout:1000,
-autoplayHoverPause:false,
+    autoplayTimeout:1000,
+    autoplayHoverPause:false,
     responsive:{
         0:{
             items:1
@@ -42,8 +42,8 @@ $('.clientsay').owlCarousel({
     margin:10,
     nav:true,
     autoplay:false,
-autoplayTimeout:1000,
-autoplayHoverPause:false,
+    autoplayTimeout:1000,
+    autoplayHoverPause:false,
     responsive:{
         0:{
             items:1
@@ -57,3 +57,17 @@ autoplayHoverPause:false,
     }
 });
 
+
+//Login Page Animation
+
+var signUpButton = document.getElementById("signUp");
+var signInButton = document.getElementById("signIn");
+var container = document.getElementById("container");
+
+signUpButton.addEventListener("click", () =>
+    container.classList.add("right-panel-active")
+    );
+
+signInButton.addEventListener("click", () =>
+    container.classList.remove("right-panel-active")
+    );

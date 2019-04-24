@@ -1035,9 +1035,49 @@ img {
     background: #ededed;
 }
 
-
-
-
+/*ADmin Panel*/
+.Box-Shadow{
+padding: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    box-shadow: 1px 2px 8px 1px #6195ff;
+}
+#home-company-admin{
+height: 15vh;
+}
+.title-data h3{
+	color:#6195ff;
+}
+.dk-selected:after {
+    border-left: none; 
+}
+.dk-select, .dk-select-multi {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.5em;
+    width: 100%;
+    cursor: pointer;
+    color: #495057;
+}
+.dk-selected {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    border: 1px solid #ced4da;
+    border-radius: 0.25em;
+    padding: 7px 1.5em 0 0.5em;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    height: 38px;
+}
+.container .form-group li {
+    list-style: none;
+    display: block;
+}
 
 
 

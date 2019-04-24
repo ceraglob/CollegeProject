@@ -25,7 +25,7 @@
 				</div>
 				<span>or use your email for registration</span>
 				<input type="text" placeholder="Name" />
-				<input type="email" placeholder="Email" />
+				<input type="email" placeholder="Emails" />
 				<input type="password" placeholder="Password" />
 
 				<div class="control-group">
@@ -77,5 +77,18 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		var signUpButton = document.getElementById("signUp");
+var signInButton = document.getElementById("signIn");
+var container = document.getElementById("container");
+
+signUpButton.addEventListener("click", () =>
+    container.classList.add("right-panel-active")
+    );
+
+signInButton.addEventListener("click", () =>
+    container.classList.remove("right-panel-active")
+    );
+	</script>
 </body>
 </html>

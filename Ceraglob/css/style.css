@@ -1078,6 +1078,28 @@ height: 15vh;
     list-style: none;
     display: block;
 }
+#Companytable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#Companytable td, #Companytable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#Companytable tr:nth-child(even){background-color: #f2f2f2;}
+
+#Companytable tr:hover {background-color: #ddd;}
+
+#Companytable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:#007bff;
+  color: white;
+}
 
 
 

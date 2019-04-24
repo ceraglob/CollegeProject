@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>DistributorList</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/prettydropdowns.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/dropkick.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!--HOME-->
+	<section>
+		<header id="home-company-admin">
+			<!--NAVBAR-->	
+			<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+				<a class="navbar-brand" href="#"><img class="navbar-logo" src="images/logo.png"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Features</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Pricing</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+        <div class="Box-Shadow">
+            <div class="title-data" style="margin-bottom: 50px">
+            	<h3>DistributorList<button type="button" class="btn btn-primary" style="float:right;">Add Distributor</button></h3>
+            </div>
+            <div class="container">
+            	<div class="row">
+                    <table id="Companytable">
+                        <tr>
+                            <th>Name</th>
+                            <th>Country</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Harshil Kalariya</td>
+                            <td>India</td>
+                            <td><button type="button" class="btn btn-primary">Edit</button>
+                            <button type="button" class="btn btn-primary" style="margin-left: 10px">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Yash Marakna</td>
+                            <td>China</td>
+                            <td><button type="button" class="btn btn-primary">Edit</button>
+                            <button type="button" class="btn btn-primary" style="margin-left: 10px">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Paras Bhalala</td>
+                            <td>China</td>
+                            <td><button type="button" class="btn btn-primary">Edit</button>
+                            <button type="button" class="btn btn-primary" style="margin-left: 10px">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nidhi Rajkotiya</td>
+                            <td>China</td>
+                            <td><button type="button" class="btn btn-primary">Edit</button>
+                            <button type="button" class="btn btn-primary" style="margin-left: 10px">Delete</button>
+                            </td>
+                        </tr>
+                    </table>
+            	</div>
+            </div>
+        </div>
+		
+		<!-- FOOTER-->
+		<footer>
+
+		</footer>
+		<!-- END FOOTER-->
+	</section>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/jquery.prettydropdowns.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/dropkick.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script>
+		$("#normal_select,#normal_select1,#normal_select2").dropkick({
+  mobile: true
+});
+	</script>
+</body>
+</html>
